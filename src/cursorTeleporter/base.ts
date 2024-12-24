@@ -94,6 +94,7 @@ export class CursorTeleporterBase {
                     }
 
                     var code = character + text;
+                    code = code.toLowerCase();
                     if (code in positions) {
                         activeEditor.selection = new vscode.Selection(
                             positions[code][0],
